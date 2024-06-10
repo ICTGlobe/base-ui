@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getSession } from "@/libs/actions";
+import { getSession } from "@/lib/actions";
 import { TypographyH2 } from "@/components/ui/typography";
 
 const Dashboard = async () => {

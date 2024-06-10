@@ -13,9 +13,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { signUp } from "@/libs/actions";
+import { signUp } from "@/lib/actions";
 import { useFormState } from "react-dom";
-import { SignUpSchema } from "@/libs/zod";
+import { SignUpSchema } from "@/lib/zod";
 import { redirect } from "next/navigation";
 import FormToggle from "./FormToggle";
 

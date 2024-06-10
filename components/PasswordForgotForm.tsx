@@ -1,7 +1,7 @@
 "use client";
 
 import { z } from "zod";
-import { PasswordForgotSchema } from "@/libs/zod";
+import { PasswordForgotSchema } from "@/lib/zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { passwordForgot } from "@/libs/actions";
+import { passwordForgot } from "@/lib/actions";
 import { useFormState } from "react-dom";
 import Link from "next/link";
 import { redirect } from "next/navigation";

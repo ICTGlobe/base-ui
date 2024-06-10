@@ -4,8 +4,8 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { getIronSession } from "iron-session";
 import { ZodError } from "zod";
-import { sessionOptions, SessionData, defaultSession } from "@/libs/lib";
-import { SignInSchema } from "@/libs/zod";
+import { sessionOptions, SessionData, defaultSession } from "@/lib/session";
+import { SignInSchema } from "@/lib/zod";
 
 export const getSession = async () => {
   const session = await getIronSession<SessionData>(cookies(), sessionOptions);

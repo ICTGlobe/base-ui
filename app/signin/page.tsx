@@ -1,4 +1,4 @@
-import { getSession } from "@/libs/actions";
+import { getSession } from "@/lib/actions";
 import { redirect } from "next/navigation";
 import { TypographyH1 } from "@/components/ui/typography";
 import SignInForm from "@/components/SignInForm";

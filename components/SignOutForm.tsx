@@ -1,4 +1,4 @@
-import { signOut } from "@/libs/actions";
+import { signOut } from "@/lib/actions";
 
 const SignOutForm = () => {
   return (

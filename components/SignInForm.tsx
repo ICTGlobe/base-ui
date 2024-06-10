@@ -13,9 +13,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { signIn } from "@/libs/actions";
+import { signIn } from "@/lib/actions";
 import { useFormState } from "react-dom";
-import { SignInSchema } from "@/libs/zod";
+import { SignInSchema } from "@/lib/zod";
 import FormToggle from "./FormToggle";
 import PasswordLink from "./PasswordLink";
 
