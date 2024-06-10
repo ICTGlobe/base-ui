@@ -5,6 +5,7 @@ import { RedirectType, redirect } from "next/navigation";
 import { getIronSession } from "iron-session";
 // import { ZodError } from "zod";
 import { sessionOptions, SessionData, defaultSession } from "@/libs/lib";
+import { AUTH_SIGNUP, AUTH_SIGNIN, AUTH_FORGOT, AUTH_RESET } from "@/config";
 // import { signInSchema } from "@/libs/zod";
 
 export const getSession = async () => {
@@ -28,20 +29,17 @@ export const signUp = async (
     console.log("email", formData.get("email") as string);
     console.log("password", formData.get("password") as string);
 
-    const response = await fetch(
-      "https://api.callvault.co.za/api/v1/auth/signup",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.get("name") as string,
-          email: formData.get("email") as string,
-          password: formData.get("password") as string,
-        }),
+    const response = await fetch(AUTH_SIGNUP, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      body: JSON.stringify({
+        name: formData.get("name") as string,
+        email: formData.get("email") as string,
+        password: formData.get("password") as string,
+      }),
+    });
 
     console.log("response", response);
 
@@ -65,19 +63,16 @@ export const signIn = async (
   try {
     console.log("signIn formData", formData);
 
-    const response = await fetch(
-      "https://api.callvault.co.za/api/v1/auth/signin",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formData.get("email") as string,
-          password: formData.get("password") as string,
-        }),
+    const response = await fetch(AUTH_SIGNIN, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      body: JSON.stringify({
+        email: formData.get("email") as string,
+        password: formData.get("password") as string,
+      }),
+    });
 
     if (response.ok) {
       const user = await response.json();
@@ -109,18 +104,15 @@ export const passwordForgot = async (
   formData: FormData,
 ) => {
   try {
-    const response = await fetch(
-      "https://api.callvault.co.za/api/v1/password/forgot",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formData.get("email") as string,
-        }),
+    const response = await fetch(AUTH_FORGOT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      body: JSON.stringify({
+        email: formData.get("email") as string,
+      }),
+    });
     if (response.ok) {
       return { success: "Password reset link sent to email" };
     } else {
@@ -134,20 +126,17 @@ export const passwordReset = async (
   formData: FormData,
 ) => {
   try {
-    const response = await fetch(
-      "https://api.callvault.co.za/api/v1/password/reset",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formData.get("email") as string,
-          password: formData.get("password") as string,
-          token: formData.get("token") as string,
-        }),
+    const response = await fetch(AUTH_RESET, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      body: JSON.stringify({
+        email: formData.get("email") as string,
+        password: formData.get("password") as string,
+        token: formData.get("token") as string,
+      }),
+    });
     if (response.ok) {
       return { success: "Password has been reset" };
     } else {
