@@ -1,5 +1,5 @@
 import { z, object, string, ZodType } from "zod";
-import { SignInData, SignUpData } from "@/libs/types";
+import { SignInData, SignUpData } from "@/lib/types";
 
 export const SignUpSchema: ZodType<SignUpData> = object({
   name: string()
