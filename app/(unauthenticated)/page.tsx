@@ -1,14 +1,25 @@
-import { TypographyH1 } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
+import { RocketIcon } from "lucide-react";
 import Link from "next/link";
+import { APP_TITLE, APP_DESCRIPTION } from "@/config";
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-4 p-24">
-      <TypographyH1>Base UI Update</TypographyH1>
-      <Button variant="outline" className="rounded-sm border-zinc-600" asChild>
-        <Link href="/signin">Sign In</Link>
-      </Button>
-    </main>
+    <>
+      <h1 className="flex items-center gap-2">
+        <RocketIcon size={50} className="text-primary" />
+        {APP_TITLE}
+      </h1>
+      <p>{APP_DESCRIPTION}</p>
+      <div className="flex items-center gap-2">
+        <Button asChild>
+          <Link href="/signin">Sign In</Link>
+        </Button>
+        <small>or</small>
+        <Button variant="outline">
+          <Link href="/signup">Sign Up</Link>
+        </Button>
+      </div>
+    </>
   );
 }
