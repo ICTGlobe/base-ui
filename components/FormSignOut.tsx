@@ -1,6 +1,6 @@
 import { signOut } from "@/lib/actions";
 
-const SignOutForm = () => {
+const FormSignOut = () => {
   return (
     <form action={signOut}>
       <button type="submit" className="rounded-sm border-zinc-600 px-4 py-2">
@@ -10,4 +10,4 @@ const SignOutForm = () => {
   );
 };
 
-export default SignOutForm;
+export default FormSignOut;
