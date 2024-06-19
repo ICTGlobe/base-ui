@@ -1,7 +1,6 @@
 import { getSession } from "@/lib/actions";
 import { redirect } from "next/navigation";
-import { TypographyH1 } from "@/components/ui/typography";
-import SignInForm from "@/components/SignInForm";
+import FormSignIn from "@/components/FormSignIn";
 
 const SignIn = async () => {
   const session = await getSession();
@@ -10,12 +9,7 @@ const SignIn = async () => {
     redirect("/dashboard");
   }
 
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-6 p-24">
-      <TypographyH1>Sign In</TypographyH1>
-      <SignInForm />
-    </main>
-  );
+  return <FormSignIn />;
 };
 
 export default SignIn;
