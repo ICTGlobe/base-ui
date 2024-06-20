@@ -10,7 +10,7 @@ const Dashboard = async () => {
   if (!session.isSignedIn) {
     redirect("/signin");
   }
-  return <TypographyH2>Welcome to the Dashboard {session.name}</TypographyH2>;
+  return <TypographyH2>Welcome to the Dashboard {session.name}!</TypographyH2>;
 };
 
 export default Dashboard;
