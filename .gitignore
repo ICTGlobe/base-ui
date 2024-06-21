@@ -38,3 +38,6 @@ config.ts
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# test data
+/data
