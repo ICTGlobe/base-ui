@@ -1,0 +1,137 @@
+[
+  {
+    "id": "jnegJVYErdwZ",
+    "connectTime": "2024-06-20 15:43:32",
+    "source": "311 (Rosa Goosen)",
+    "destination": "0764869081",
+    "category": "Technical Support",
+    "rating": "7/10",
+    "duration": "4:25"
+  },
+  {
+    "id": "9wdL9l6wvejP",
+    "connectTime": "2024-06-20 15:39:51",
+    "source": "230 (Amanda du Plessis)",
+    "destination": "0614758427",
+    "category": "Ordering/Quotation",
+    "rating": "7/10",
+    "duration": "4:56"
+  },
+  {
+    "id": "MYerkNZo2aOB",
+    "connectTime": "2024-06-20 15:39:15",
+    "source": "100",
+    "destination": "+27826274708",
+    "category": "Personal",
+    "rating": "8/10",
+    "duration": "6:57"
+  },
+  {
+    "id": "GRb4xDmDkbBL",
+    "connectTime": "2024-06-20 15:37:06",
+    "source": "213 (Jade Le Roux)",
+    "destination": "0215516676",
+    "category": "Personal",
+    "rating": "8/10",
+    "duration": "1:57"
+  },
+  {
+    "id": "9wdL9l6RvejP",
+    "connectTime": "2024-06-20 15:37:04",
+    "source": "219 (Joe Joubert)",
+    "destination": "27663082397",
+    "category": " Technical Support",
+    "rating": "4/10",
+    "duration": "4:48"
+  },
+  {
+    "id": "4oeER7O74a0B",
+    "connectTime": "2024-06-20 15:37:03",
+    "source": "266 (Nolo Kunene)",
+    "destination": "0125480961",
+    "category": "Technical Support",
+    "rating": "8/10",
+    "duration": "2:54"
+  },
+  {
+    "id": "QBeXDAxAoeyK",
+    "connectTime": "2024-06-20 15:36:53",
+    "source": "213 (Jade Le Roux)",
+    "destination": "0215516676",
+    "category": "Uncategorized",
+    "rating": "N/A",
+    "duration": "0:02"
+  },
+  {
+    "id": "pmbkRVQVKazJ",
+    "connectTime": "2024-06-20 15:36:38",
+    "source": "141",
+    "destination": "0823226622",
+    "category": "Technical Support",
+    "rating": "3/10",
+    "duration": "2:49"
+  },
+  {
+    "id": "9wdL9l6DjejP",
+    "connectTime": "2024-06-20 15:36:37",
+    "source": "355 (Nico Prinsloo)",
+    "destination": "0662523612",
+    "category": "Uncategorized",
+    "rating": "N/A",
+    "duration": "0:04"
+  },
+  {
+    "id": "open5VQXYd7A",
+    "connectTime": "2024-06-20 15:35:21",
+    "source": "991",
+    "destination": "0216971635",
+    "category": "Personal",
+    "rating": "8/10",
+    "duration": "0:29"
+  },
+  {
+    "id": "5xe7378z8e7r",
+    "connectTime": "2024-06-20 15:33:49",
+    "source": "213 (Jade Le Roux)",
+    "destination": "273 (Marnus van der Westhuizen)",
+    "category": "Technical Support",
+    "rating": "3/10",
+    "duration": "2:26"
+  },
+  {
+    "id": "ELe310Rr4b69",
+    "connectTime": "2024-06-20 15:33:49",
+    "source": "273 (Marnus van der Westhuizen)",
+    "destination": "213 (Jade Le Roux)",
+    "category": "Uncategorized",
+    "rating": "N/A",
+    "duration": "0:00"
+  },
+  {
+    "id": "KQe1wz1p0bJY",
+    "connectTime": "2024-06-20 15:33:44",
+    "source": "273 (Marnus van der Westhuizen)",
+    "destination": "213 (Jade Le Roux)",
+    "category": "Uncategorized",
+    "rating": "N/A",
+    "duration": "0:04"
+  },
+  {
+    "id": "Jxbo29R9kagw",
+    "connectTime": "2024-06-20 15:33:40",
+    "source": "41 (Carelize Delport)",
+    "destination": "0108808256",
+    "category": "Ordering/Quotation",
+    "rating": "7/10",
+    "duration": "5:56"
+  },
+  {
+    "id": "BDbDk7NxAal2",
+    "connectTime": "2024-06-20 15:33:27",
+    "source": "213 (Jade Le Roux)",
+    "destination": "273 (Marnus van der Westhuizen)",
+    "category": "Uncategorized",
+    "rating": "N/A",
+    "duration": "0:02"
+  }
+]
