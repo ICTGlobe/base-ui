@@ -1,13 +1,20 @@
 "use client";
 
+import ProfileWidget from "../ProfileWidget";
 import MenuItem from "./MenuMainItem";
 import { TestData } from "./testData";
 import { cn } from "@/lib/utils";
 
-const MenuMain = ({ className }: { className?: string }) => {
+const MenuMain = (
+  { userName }: { userName: string },
+  { className }: { className?: string }
+) => {
   return (
     <nav
-      className={cn(`md:bg-zinc-50 overflow-auto p-4 min-h-screen`, className)}
+      className={cn(
+        ` overflow-auto min-h-fit min-w-[200px]`,
+        className
+      )}
     >
       <ul className="">
         {TestData.map((item, index) => (
@@ -16,6 +23,7 @@ const MenuMain = ({ className }: { className?: string }) => {
           </MenuItem>
         ))}
       </ul>
+      {/* <ProfileWidget name={userName} /> */}
     </nav>
   );
 };

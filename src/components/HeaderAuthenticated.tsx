@@ -8,7 +8,7 @@ const HeaderAuthenticated = async () => {
   const session = await getSession();
 
   return (
-    <header className="flex justify-between bg-white drop-shadow-md">
+    <header className="hidden md:flex justify-between bg-white drop-shadow-md">
       <AppTitle />
       <nav>Nav stuff here</nav>
       <div>

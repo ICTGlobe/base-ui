@@ -1,21 +1,25 @@
 import Footer from "@/components/Footer";
 import HeaderAuthenticated from "@/components/HeaderAuthenticated";
-import MenuMain from "@/components/MenuMain/MenuMain";
+import MenuMain from "@/components/Menu/MenuMain";
 import { MenuIcon } from "lucide-react";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
+import MenuMobile from "@/components/Menu/MenuMobile";
+import { getSession } from "@/lib/actions";
 
 type Props = {
   children?: React.ReactNode;
 };
 
-const DashboardLayout = ({ children }: Props) => {
+const DashboardLayout = async ({ children }: Props) => {
   // const isDesktop = useMediaQuery("(min-width: 768px)");
+  const session = await getSession();
   return (
     <>
+      <MenuMobile userName={session.name as string} />
       <HeaderAuthenticated />
       <main className="flex-grow flex">
-        <aside>
-          <MenuMain />
+        <aside className="hidden md:flex md:bg-zinc-50  p-4">
+          <MenuMain userName={session.name as string} />
         </aside>
         <section className="py-2 px-4">{children}</section>
       </main>

@@ -1,12 +1,15 @@
 import { signOut } from "@/lib/actions";
 
-const FormSignOut = () => {
+type FormSignOutProps = {
+  children: React.ReactNode | string;
+};
+
+const FormSignOut = ({ children }: FormSignOutProps) => {
   return (
     <form action={signOut}>
       <button type="submit" className="rounded-sm border-zinc-600 px-4 py-2">
-        Sign Out
+        {children}
       </button>
-      
     </form>
   );
 };
