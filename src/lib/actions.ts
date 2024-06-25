@@ -21,6 +21,18 @@ export const getSession = async () => {
   return session;
 };
 
+// Convert to a plain object
+// export const sessionForClient =  () => {
+//   const session =  getSession();
+//   return {
+//     isSignedIn: session.isSignedIn,
+//     id: session.id?.toString(),
+//     name: session.name?.toString(),
+//     email: session.email?.toString(),
+//     token: session.token?.toString(),
+//   };
+// };
+
 export const signUp = async (
   prevState: { error: undefined | string },
   formData: FormData

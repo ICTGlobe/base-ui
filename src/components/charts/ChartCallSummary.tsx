@@ -136,7 +136,7 @@ const ChartCallSummary = () => {
           stackId={1}
           fill="hsl(11, 84%, 53%)"
           fillOpacity={0.25}
-          radius={[4, 4, 0, 0]}
+          // radius={[4, 4, 0, 0]}
           stroke="hsl(11, 84%, 53%)"
         />
         <Bar
@@ -145,7 +145,7 @@ const ChartCallSummary = () => {
           fill="hsl(24, 100%, 50%)"
           fillOpacity={0.25}
           stroke="hsl(24, 100%, 50%)"
-          radius={[4, 4, 4, 4]}
+          // radius={[4, 4, 4, 4]}
           transform="translate(0, -2)"
         />
         <Bar
@@ -154,7 +154,7 @@ const ChartCallSummary = () => {
           fill="hsl(227, 99%, 49%)"
           fillOpacity={0.25}
           stroke="hsl(227, 99%, 49%)"
-          radius={[4, 4, 4, 4]}
+          radius={[4, 4, 0, 0]}
           transform="translate(0, -4)"
         />
       </BarChart>
