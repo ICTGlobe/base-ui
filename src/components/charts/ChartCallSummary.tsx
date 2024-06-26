@@ -142,9 +142,9 @@ const ChartCallSummary = () => {
         <Bar
           dataKey="2"
           stackId={1}
-          fill="hsl(24, 100%, 50%)"
+          fill="hsl(32, 100%, 60%)"
           fillOpacity={0.25}
-          stroke="hsl(24, 100%, 50%)"
+          stroke="hsl(32, 100%, 60%)"
           // radius={[4, 4, 4, 4]}
           transform="translate(0, -2)"
         />

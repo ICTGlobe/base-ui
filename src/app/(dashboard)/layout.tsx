@@ -25,7 +25,7 @@ const DashboardLayout = async ({ children }: Props) => {
         <aside className="hidden md:flex md:bg-muted px-4 py-6">
           <Nav userName={session.name as string} />
         </aside>
-        <section className="py-6 px-4">{children}</section>
+        <section className="py-6 px-4 flex-grow">{children}</section>
       </main>
       <Footer />
     </>
