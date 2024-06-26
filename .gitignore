@@ -40,4 +40,4 @@ config.ts
 next-env.d.ts
 
 # test data
-/data
+/src/test_data

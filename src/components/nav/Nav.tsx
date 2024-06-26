@@ -2,7 +2,7 @@
 
 import ProfileWidget from "../ProfileWidget";
 import MenuItem from "./NavItem";
-import { TestData } from "./testData";
+import { NavTestData } from "@/test_data/navTestData";
 import { cn } from "@/lib/utils";
 
 const MenuMain = (
@@ -12,7 +12,7 @@ const MenuMain = (
   return (
     <nav className={cn(` overflow-auto min-h-fit min-w-[200px]`, className)}>
       <ul className="">
-        {TestData.map((item, index) => (
+        {NavTestData.map((item, index) => (
           <MenuItem key={index} href={item.href}>
             {item.children}
           </MenuItem>

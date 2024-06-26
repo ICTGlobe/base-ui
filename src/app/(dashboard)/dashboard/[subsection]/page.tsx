@@ -6,7 +6,6 @@ const Subsection = ({
   children?: React.ReactNode;
   params: { subsection: string };
 }) => {
-  console.table(params);
   return (
     <>
       <h1>Subsection {params.subsection}</h1>
