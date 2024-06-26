@@ -11,12 +11,6 @@ import {
 } from "../ui/drawer";
 import { CircleUserRoundIcon, LogOutIcon, MenuIcon } from "lucide-react";
 import MenuMain from "./MenuMain";
-import ProfileWidget from "../ProfileWidget";
-import {
-  TypographyH4,
-  TypographyH5,
-  TypographyH6,
-} from "@/components/ui/typography";
 import LightDarkToggle from "../LightDarkToggle";
 import FormSignOut from "../FormSignOut";
 

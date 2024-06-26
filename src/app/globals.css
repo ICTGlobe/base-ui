@@ -91,7 +91,7 @@
   h1,
   h2,
   h3 {
-    @apply font-semibold;
+    @apply font-semibold tracking-wider;
   }
   h4,
   h5,
@@ -116,5 +116,17 @@
   }
   h6 {
     font-size: 1rem;
+  }
+}
+
+@layer components {
+  .link {
+    @apply text-primary hover:underline;
+  }
+}
+
+@layer utilities {
+  section:has(.heading) {
+    @apply pt-3;
   }
 }
