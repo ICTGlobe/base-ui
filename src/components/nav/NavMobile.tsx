@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import MenuTitle from "./MenuTitle";
+import NavTitle from "./NavTitle";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import {
   Drawer,
@@ -10,18 +10,18 @@ import {
   DrawerTrigger,
 } from "../ui/drawer";
 import { CircleUserRoundIcon, LogOutIcon, MenuIcon } from "lucide-react";
-import MenuMain from "./MenuMain";
+import MenuMain from "./Nav";
 import LightDarkToggle from "../LightDarkToggle";
 import FormSignOut from "../FormSignOut";
 
-const MenuMobile = ({ userName }: { userName: string }) => {
+const NavMobile = ({ userName }: { userName: string }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const [mobileMenuOPen, setMobileMenuOpen] = useState(false);
   return (
     !isDesktop && (
       <div className="p-4 flex justify-between md:hidden sticky top-0 left-0 bg-background border-b border-border">
-        <MenuTitle />
+        <NavTitle />
         <Drawer
           direction="right"
           open={mobileMenuOPen}
@@ -51,4 +51,4 @@ const MenuMobile = ({ userName }: { userName: string }) => {
     )
   );
 };
-export default MenuMobile;
+export default NavMobile;

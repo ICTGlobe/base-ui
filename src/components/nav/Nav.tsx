@@ -1,7 +1,7 @@
 "use client";
 
 import ProfileWidget from "../ProfileWidget";
-import MenuItem from "./MenuMainItem";
+import MenuItem from "./NavItem";
 import { TestData } from "./testData";
 import { cn } from "@/lib/utils";
 
@@ -10,12 +10,7 @@ const MenuMain = (
   { className }: { className?: string }
 ) => {
   return (
-    <nav
-      className={cn(
-        ` overflow-auto min-h-fit min-w-[200px]`,
-        className
-      )}
-    >
+    <nav className={cn(` overflow-auto min-h-fit min-w-[200px]`, className)}>
       <ul className="">
         {TestData.map((item, index) => (
           <MenuItem key={index} href={item.href}>

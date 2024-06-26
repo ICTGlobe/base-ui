@@ -11,7 +11,7 @@ type Props = {
   href: string;
 };
 
-const MenuMainItem = ({ children, href }: Props) => {
+const NavItem = ({ children, href }: Props) => {
   const { onClose } = useContext(DrawerContext);
   const pathName = usePathname();
   const isActive = pathName === href;
@@ -32,4 +32,4 @@ const MenuMainItem = ({ children, href }: Props) => {
     </li>
   );
 };
-export default MenuMainItem;
+export default NavItem;
