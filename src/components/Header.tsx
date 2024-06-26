@@ -1,12 +1,10 @@
 import LightDarkToggle from "@/components/LightDarkToggle";
 import AppTitle from "./AppTitle";
+import Image from "next/image";
 
 const Header = () => {
-
   return (
-    <header className="flex justify-between">
-      <AppTitle />
-      <nav>Nav stuff here</nav>
+    <header className="flex justify-end">
       <LightDarkToggle />
     </header>
   );
