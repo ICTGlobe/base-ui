@@ -12,7 +12,7 @@ const GridCardsFour = () => {
             <CardContent>Content</CardContent>
           </Card>
         </div>
-        <div className=" col-span-1">
+        <div className="col-span-1">
           <Card>
             <CardHeader>
               <CardTitle>Two</CardTitle>
@@ -20,7 +20,7 @@ const GridCardsFour = () => {
             <CardContent>Content</CardContent>
           </Card>
         </div>
-        <div className=" col-span-1">
+        <div className="col-span-1">
           <Card>
             <CardHeader>
               <CardTitle>Three</CardTitle>
@@ -28,7 +28,7 @@ const GridCardsFour = () => {
             <CardContent>Content</CardContent>
           </Card>
         </div>
-        <div className=" col-span-1">
+        <div className="col-span-1">
           <Card>
             <CardHeader>
               <CardTitle>Four</CardTitle>
