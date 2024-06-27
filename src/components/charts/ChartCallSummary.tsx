@@ -82,16 +82,16 @@ const ChartCallSummary = () => {
         <YAxis stroke="#888888" fontSize={12} />
 
         <Tooltip
-          // separator=": "
-          // formatter={(value, name) => {
-          //   if (name === "1") {
-          //     return [value, "Poor"];
-          //   } else if (name === "2") {
-          //     return [value, "Average"];
-          //   } else if (name === "3") {
-          //     return [value, "Good"];
-          //   }
-          // }}
+          separator=": "
+          formatter={(value, name) => {
+            if (name === "1") {
+              return [value, "Poor"];
+            } else if (name === "2") {
+              return [value, "Average"];
+            } else if (name === "3") {
+              return [value, "Good"];
+            }
+          }}
           content={<CustomTooltip />}
           labelClassName="font-bold"
           wrapperClassName="!text-sm dark:!bg-black rounded-md dark:!border-border"
