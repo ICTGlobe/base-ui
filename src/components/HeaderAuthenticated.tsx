@@ -3,7 +3,6 @@ import AppTitle from "./AppTitle";
 import ProfileWidget from "./ProfileWidget";
 
 import { APP_LOGO, APP_LOGO_LIGHT, APP_LOGO_DARK } from "../../config";
-import logo from "../../public/CallVault-Black.png";
 import { getSession } from "@/lib/actions";
 import Image from "next/image";
 
