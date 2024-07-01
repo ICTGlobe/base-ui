@@ -20,7 +20,7 @@ const NavMobile = ({ userName }: { userName: string }) => {
   const [mobileMenuOPen, setMobileMenuOpen] = useState(false);
   return (
     !isDesktop && (
-      <div className="p-4 flex justify-between md:hidden sticky top-0 left-0 bg-background border-b border-border">
+      <div className="sticky left-0 top-0 flex justify-between border-b border-border bg-background p-4 md:hidden">
         <NavTitle />
         <Drawer
           direction="right"
@@ -34,7 +34,7 @@ const NavMobile = ({ userName }: { userName: string }) => {
           <DrawerContent className="flex flex-col gap-8 p-4">
             <MenuMain userName={userName} />
             <div className="flex justify-between gap-2 md:hidden">
-              <div className="flex gap-2 items-center">
+              <div className="flex items-center gap-2">
                 <CircleUserRoundIcon />
                 <p>{userName}</p>
               </div>

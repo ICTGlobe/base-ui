@@ -3,8 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 const GridCardsFour = () => {
   return (
     <>
-      <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-4 mb-4">
-        <div className=" 2xl:col-span-1 xl:col-span-3 col-span-1">
+      <div className="mb-4 grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        <div className="col-span-1 xl:col-span-3 2xl:col-span-1">
           <Card>
             <CardHeader>
               <CardTitle>One</CardTitle>

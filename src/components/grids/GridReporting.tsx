@@ -5,8 +5,8 @@ import { snapshot, product, team, sales } from "../../test_data/reporting";
 const GridReporting = () => {
   return (
     <>
-      <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-4 mb-4">
-        <div className=" 2xl:col-span-1 xl:col-span-3 col-span-1">
+      <div className="mb-4 grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        <div className="col-span-1 xl:col-span-3 2xl:col-span-1">
           <Link href="#">
             <Card className="border-primary-foreground hover:bg-muted">
               <CardHeader>
@@ -19,7 +19,7 @@ const GridReporting = () => {
             </Card>
           </Link>
         </div>
-        <div className=" col-span-1">
+        <div className="col-span-1">
           <Link href="#">
             <Card className="hover:bg-muted">
               <CardHeader>
@@ -32,7 +32,7 @@ const GridReporting = () => {
             </Card>
           </Link>
         </div>
-        <div className=" col-span-1">
+        <div className="col-span-1">
           <Link href="#">
             <Card className="hover:bg-muted">
               <CardHeader>
@@ -45,7 +45,7 @@ const GridReporting = () => {
             </Card>
           </Link>
         </div>
-        <div className=" col-span-1">
+        <div className="col-span-1">
           <Card className="bg-muted">
             <CardHeader>
               <CardTitle className="flex gap-2">

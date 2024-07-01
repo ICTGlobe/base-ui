@@ -10,7 +10,7 @@ const HeaderAuthenticated = async () => {
   const session = await getSession();
 
   return (
-    <header className="hidden md:flex justify-between items-center bg-white dark:bg-zinc-700 drop-shadow-md px-4 py-2">
+    <header className="hidden items-center justify-between bg-white px-4 py-2 drop-shadow-md dark:bg-zinc-700 md:flex">
       {APP_LOGO_LIGHT && APP_LOGO_DARK ? (
         <>
           <Image

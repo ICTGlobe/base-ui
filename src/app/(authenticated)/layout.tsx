@@ -21,11 +21,11 @@ const DashboardLayout = async ({ children }: Props) => {
     <>
       <NavMobile userName={session.name as string} />
       <HeaderAuthenticated />
-      <main className="flex-grow flex">
-        <aside className="hidden md:flex md:bg-muted px-4 py-6">
+      <main className="flex flex-grow">
+        <aside className="hidden px-4 py-6 md:flex md:bg-muted">
           <Nav userName={session.name as string} />
         </aside>
-        <section className="py-6 px-4 flex-grow">{children}</section>
+        <section className="flex-grow px-4 py-6">{children}</section>
       </main>
       <Footer />
     </>

@@ -35,7 +35,7 @@ export const getSession = async () => {
 
 export const signUp = async (
   prevState: { error: undefined | string },
-  formData: FormData
+  formData: FormData,
 ) => {
   try {
     console.log("signUp formData", formData);
@@ -73,7 +73,7 @@ export const signUp = async (
 
 export const signIn = async (
   prevState: { error: undefined | string },
-  formData: FormData
+  formData: FormData,
 ) => {
   try {
     console.log("signIn formData", formData);
@@ -116,7 +116,7 @@ export const signOut = async () => {
 
 export const passwordForgot = async (
   prevState: { error: undefined | string },
-  formData: FormData
+  formData: FormData,
 ) => {
   try {
     const response = await fetch(AUTH_FORGOT, {
@@ -138,7 +138,7 @@ export const passwordForgot = async (
 
 export const passwordReset = async (
   prevState: { error: undefined | string },
-  formData: FormData
+  formData: FormData,
 ) => {
   try {
     const response = await fetch(AUTH_RESET, {

@@ -20,9 +20,9 @@ const NavItem = ({ children, href }: Props) => {
     <li>
       <Link
         className={cn(
-          "block p-2 hover:bg-white dark:hover:bg-zinc-700 rounded-md text-muted-foreground hover:text-foreground",
+          "block rounded-md p-2 text-muted-foreground hover:bg-white hover:text-foreground dark:hover:bg-zinc-700",
           isActive &&
-            "bg-primary hover:bg-primary dark:hover:bg-primary hover:text-primary-foreground text-primary-foreground"
+            "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground dark:hover:bg-primary",
         )}
         href={href}
         onClick={onClose}

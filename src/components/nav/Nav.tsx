@@ -9,10 +9,10 @@ const navData = NavTestData;
 
 const MenuMain = (
   { userName }: { userName: string },
-  { className }: { className?: string }
+  { className }: { className?: string },
 ) => {
   return (
-    <nav className={cn(` overflow-auto min-h-fit min-w-[200px]`, className)}>
+    <nav className={cn(`min-h-fit min-w-[200px] overflow-auto`, className)}>
       <ul className="">
         {navData.map((item, index) => (
           <MenuItem key={index} href={item.href}>
