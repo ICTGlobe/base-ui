@@ -2,22 +2,20 @@
 
 import { DrawerContext } from "@/components/ui/drawer";
 import { cn } from "@/lib/utils";
-import { StickyNoteIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
 
-type NavItemProps = {
-  icon?: React.ReactNode;
-  label: string;
+type Props = {
+  children: React.ReactNode;
   href: string;
-  isExpanded: boolean;
+  isOpen?: boolean;
 };
 
-const NavItem = (item: NavItemProps) => {
+const NavItem = ({ children, href }: Props) => {
   const { onClose } = useContext(DrawerContext);
   const pathName = usePathname();
-  const isActive = pathName === item.href;
+  const isActive = pathName === href;
 
   return (
     <li>
@@ -27,17 +25,10 @@ const NavItem = (item: NavItemProps) => {
           isActive &&
             "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground dark:hover:bg-primary",
         )}
-        href={item.href}
+        href={href}
         onClick={onClose}
       >
-        <div className="flex items-center justify-start gap-2">
-          <span title={item.label}>
-            {item.icon ? item.icon : <StickyNoteIcon />}
-          </span>
-          <span className={item.isExpanded ? "inline-block" : "hidden"}>
-            {item.label}
-          </span>
-        </div>
+        {children}
       </Link>
     </li>
   );
