@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ProfileWidget from "../ProfileWidget";
 import { NavTestData } from "@/test_data/navTestData";
+import { pageContent } from "@/content/subpages";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { ArrowLeftToLineIcon, ArrowRightFromLineIcon } from "lucide-react";
@@ -32,6 +33,16 @@ const MenuMain = (
           <NavItem key={item.href} {...item} isExpanded={isExpanded} />
         ))}
       </ul>
+      <div>
+        {Object.entries(pageContent).map(([key, value]) => (
+          <div key={key}>
+            <h3>{key}</h3>
+            <h4>{value.label}</h4>
+            <p>Link: {value.href}</p>
+            {/* <div>Content: {value.content}</div> */}
+          </div>
+        ))}
+      </div>
     </nav>
   );
 };
