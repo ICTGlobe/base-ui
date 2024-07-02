@@ -23,22 +23,9 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { RocketIcon } from "lucide-react";
+import { LogInIcon, RocketIcon } from "lucide-react";
 import InputPassword from "./InputPassword";
 import Link from "next/link";
-
-// const formSchema = z.object({
-//   email: z.string().email({ message: "Enter a valid email" }),
-//   password: z
-//     .string()
-//     .min(4, { message: "Enter a password of at least 4 characters" })
-//     .max(20, { message: "Password must be at most 20 characters" }),
-// });
-
-// interface FormValues {
-//   email: string;
-//   password: string;
-// }
 
 const FormSignIn = () => {
   const form = useForm<z.infer<typeof SignInSchema>>({
@@ -60,7 +47,7 @@ const FormSignIn = () => {
     <Card className="w-full max-w-sm">
       <CardHeader>
         <CardTitle className="flex gap-2">
-          <RocketIcon size={24} />
+          <LogInIcon size={24} />
           <span>Sign In</span>
         </CardTitle>
       </CardHeader>

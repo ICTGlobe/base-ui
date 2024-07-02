@@ -13,6 +13,7 @@ import { CircleUserRoundIcon, LogOutIcon, MenuIcon } from "lucide-react";
 import MenuMain from "./Nav";
 import LightDarkToggle from "../LightDarkToggle";
 import FormSignOut from "../FormSignOut";
+import { HAS_SIDE_NAV } from "../../../config";
 
 const NavMobile = ({ userName }: { userName: string }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -32,7 +33,7 @@ const NavMobile = ({ userName }: { userName: string }) => {
             <MenuIcon />
           </DrawerTrigger>
           <DrawerContent className="flex flex-col gap-8 p-4">
-            <MenuMain userName={userName} />
+            {HAS_SIDE_NAV ? <MenuMain userName={userName} /> : null}
             <div className="flex justify-between gap-2 md:hidden">
               <div className="flex items-center gap-2">
                 <CircleUserRoundIcon />

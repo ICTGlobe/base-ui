@@ -21,7 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(poppins.className, "flex", "h-screen flex-col")}>
+      <body
+        className={cn(
+          poppins.className,
+          "flex",
+          "h-screen flex-col bg-zinc-200 dark:bg-zinc-900",
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -24,7 +24,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { RocketIcon } from "lucide-react";
+import { PenLineIcon, RocketIcon } from "lucide-react";
 import InputPassword from "./InputPassword";
 import Link from "next/link";
 
@@ -49,7 +49,7 @@ const FormSignUp = () => {
     <Card className="w-full max-w-sm">
       <CardHeader>
         <CardTitle className="flex gap-2">
-          <RocketIcon size={24} />
+          <PenLineIcon size={24} />
           <span>Sign Up</span>
         </CardTitle>
       </CardHeader>
